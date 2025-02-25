@@ -9,8 +9,6 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
-@Table(name = "darbuotojas")
-
 public class Darbuotojas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,11 +17,9 @@ public class Darbuotojas {
     private String pavarde;
 
     @ManyToOne
-    @JoinColumn(name = "skyrius_id")
     private Skyrius skyrius;
 
     @ManyToOne
-    @JoinColumn(name = "projektas_id")  // Foreign key column
     private Projektas projektas;
 
     public Darbuotojas(String vardas, String pavarde, Skyrius skyrius, Projektas projektas) {

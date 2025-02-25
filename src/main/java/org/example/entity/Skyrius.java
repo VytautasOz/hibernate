@@ -12,8 +12,6 @@ import java.util.List;
 @Setter
 @ToString
 @Entity
-@Table(name = "skyrius")
-
 public class Skyrius {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -12,7 +12,6 @@ import java.util.List;
 @Setter
 @ToString
 @Entity
-@Table(name = "projektas")
 public class Projektas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
